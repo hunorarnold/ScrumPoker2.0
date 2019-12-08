@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/addQuestion"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="60dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editRoomName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/addQuestionID"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="60dp"
@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/addQuestion" />
 
     <Button
         android:id="@+id/btn_pickDate"
@@ -78,7 +78,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionID" />
 
     <Button
         android:id="@+id/btn_pickTime"
@@ -93,10 +93,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btn_pickDate"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionID" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCreate"
         android:layout_width="280dp"
         android:layout_height="37dp"
         android:layout_marginTop="24dp"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_pickDate" />
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnView"
         android:layout_width="280dp"
         android:layout_height="37dp"
         android:layout_marginTop="8dp"
@@ -121,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate"
         app:layout_constraintVertical_bias="0.113" />
 
     <Button
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/btnView"
         app:layout_constraintVertical_bias="0.057" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
