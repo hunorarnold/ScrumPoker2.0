@@ -8,9 +8,46 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:133083630509:android:c94c00481280b5474b6f24",
+        "mobilesdk_app_id": "1:133083630509:android:d400b1c8669166a34b6f24",
         "android_client_info": {
           "package_name": "com.example.adminapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133083630509-7l2f42j3n85euc360n0ij6v2ha1c2qjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminapplication",
+            "certificate_hash": "709191453db7935798ff93a66ef466f2052ea903"
+          }
+        },
+        {
+          "client_id": "133083630509-0jth87i3dtlcmmaqc71li7mme9c6jidj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSRuQ4rbdXAAHlTJakI-8wriYgNBMpq8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133083630509-0jth87i3dtlcmmaqc71li7mme9c6jidj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133083630509:android:1999a1a5c14815d04b6f24",
+        "android_client_info": {
+          "package_name": "com.example.userapplication"
         }
       },
       "oauth_client": [

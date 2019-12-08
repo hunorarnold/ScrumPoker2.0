@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,12 +13,16 @@ import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.sql.Time;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnDate, btnTime;
+    Button btnDate, btnTime, btnLogout;
+    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnDate = findViewById(R.id.btn_pickDate);
         btnTime = findViewById(R.id.btn_pickTime);
+        btnLogout = findViewById(R.id.btnLogout);
 
         btnDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 handleTimeButton();
+            }
+        });
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                FirebaseAuth.getInstance().signOut();
+                Intent intentLogout = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intentLogout);
+
             }
         });
     }
